@@ -1,0 +1,137 @@
+{
+    "metrics": [
+        {
+            "name": "Active Individuals",
+            "totalCount": 40689,
+            "lastMonthTrend": {
+                "direction": "upwards",
+                "percentageChange": 2.5
+            }
+        },
+        {
+            "name": "New Individuals",
+            "totalCount": 570,
+            "lastMonthTrend": {
+                "direction": "downwards",
+                "percentageChange": 2.5
+            }
+        },
+        {
+            "name": "Prospects Count",
+            "totalCount": 20567,
+            "lastMonthTrend": {
+                "direction": "downwards",
+                "percentageChange": 2.5
+            }
+        },
+        {
+            "name": "Leads Count",
+            "totalCount": 10063,
+            "lastMonthTrend": {
+                "direction": "upwards",
+                "percentageChange": 2.5
+            }
+        },
+        {
+            "name": "Total UID's",
+            "totalCount": 47000,
+            "lastMonthTrend": {
+                "direction": "upwards",
+                "percentageChange": 2.5
+            }
+        },
+        {
+            "name": "High Network Score Customers",
+            "totalCount": 12563,
+            "lastMonthTrend": {
+                "direction": "downwards",
+                "percentageChange": 2.5
+            }
+        }
+    ],
+    "keyPerformanceIndicators": [
+        {
+            "name": "SLA Compliance Rate",
+            "description": "SLA compliance rate across services",
+            "currentPercent": 89,
+            "lastMonthTrend": {
+                "direction": "upwards",
+                "percentageChange": 2.5
+            }
+        },
+        {
+            "name": "Data Integration",
+            "description": "Rate of data integration success",
+            "currentPercent": 78,
+            "lastMonthTrend": {
+                "direction": "downwards",
+                "percentageChange": 2.5
+            }
+        },
+        {
+            "name": "CCPA & USGCI Compliance Percentage",
+            "description": "CCPA and USGCI compliance rate",
+            "currentPercent": 98,
+            "lastMonthTrend": {
+                "direction": "downwards",
+                "percentageChange": 2.5
+            }
+        },
+        {
+            "name": "Customer Profile Completeness",
+            "description": "Percentage of customers with complete profiles",
+            "currentPercent": 79,
+            "lastMonthTrend": {
+                "direction": "upwards",
+                "percentageChange": 2.5
+            }
+        },
+        {
+            "name": "Prospect Profile Completeness",
+            "description": "Percentage of prospects with complete profiles",
+            "currentPercent": 96,
+            "lastMonthTrend": {
+                "direction": "upwards",
+                "percentageChange": 2.5
+            }
+        },
+        {
+            "name": "CDI Match Rate",
+            "description": "CDI match rate performance",
+            "currentPercent": 78,
+            "lastMonthTrend": {
+                "direction": "downwards",
+                "percentageChange": 2.5
+            }
+        }
+    ],
+    "customerSegments": [
+        {
+            "segmentName": "High retention customers",
+            "percentage": 31
+        },
+        {
+            "segmentName": "Low retention customers",
+            "percentage": 26
+        },
+        {
+            "segmentName": "Data heavy customers",
+            "percentage": 15
+        },
+        {
+            "segmentName": "Voice heavy customers",
+            "percentage": 17
+        },
+        {
+            "segmentName": "Growing customers",
+            "percentage": 13
+        }
+    ],
+    "predictiveIntents": [
+        "Monitor and analyze the performance of advertising campaigns to ensure effectiveness.",
+        "Design and distribute surveys to gather customer feedback.",
+        "Utilize data analytics to track the performance of digital marketing campaigns and adjust strategies accordingly.",
+        "Develop joint marketing-sales initiatives to drive revenue growth.",
+        "Analyze customer data weekly to identify trends and preferences."
+    ]
+}

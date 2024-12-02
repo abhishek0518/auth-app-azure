@@ -1,0 +1,75 @@
+$size-598: calc($size-1 * 598);
+
+.MuiDialog-root:not(.plagiarism-dialog) {
+  .MuiBackdrop-root.MuiModal-backdrop {
+    background: rgba(18, 18, 18, 0.76);
+    backdrop-filter: blur($size-3);
+  }
+
+  .MuiPaper-elevation.MuiPaper-rounded.MuiDialog-paper {
+    min-width: $size-598;
+    width: auto;
+    height: auto;
+    border-radius: $size-22;
+    box-shadow: 0px 8px 24px 0px rgba(65, 65, 65, 0.19);
+  }
+}
+
+.general-dialog.MuiDialog-root {
+  .MuiDialogTitle-root {
+    display: flex;
+    justify-content: space-between;
+    font-size: $size-32;
+    line-height: $size-36;
+    color: #121212;
+    font-family: $TeleNeoExtrabold;
+
+    .close-icon {
+      cursor: pointer;
+      margin-left: $size-24;
+    }
+  }
+
+  .MuiDialogContent-root {
+    padding: $size-24;
+  }
+
+  .MuiDialogActions-root {
+    padding: $size-24;
+
+    .btn-primary {
+      margin-left: $size-16;
+    }
+  }
+}
+@include xl-up() {
+  .MuiDialog-root:not(.plagiarism-dialog) {
+    .MuiBackdrop-root.MuiModal-backdrop {
+      backdrop-filter: blur(3px);
+    }
+
+    .MuiPaper-elevation.MuiPaper-rounded.MuiDialog-paper {
+      min-width: 598px;
+      border-radius: 22px;
+    }
+  }
+
+  .general-dialog.MuiDialog-root {
+    .MuiDialogTitle-root {
+      font-size: 32px;
+      line-height: 36px;
+    }
+
+    .MuiDialogContent-root {
+      padding: 24px;
+    }
+
+    .MuiDialogActions-root {
+      padding: 24px;
+
+      .btn-primary {
+        margin-left: 16px;
+      }
+    }
+  }
+}

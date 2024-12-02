@@ -1,0 +1,30 @@
+@import "src/styles/settings";
+@import "src/styles/elements";
+
+.custom-table {
+    .btn-border {
+        color: #E20074;
+        border-color: #E20074;
+        text-transform: none;
+        box-sizing: border-box;
+
+        &__icon {
+            max-width: $size-16;
+            max-height: $size-16;
+            background: url("../../../assets/images/eye-icon-magenta.svg") center no-repeat;
+            background-size: contain; 
+        }
+    }
+
+    @include xl-up() {
+
+    .btn-border {
+        box-sizing: border-box;
+
+        &__icon {
+            max-width: $size-16;
+            max-height: $size-16;
+        }
+    }
+    }
+}

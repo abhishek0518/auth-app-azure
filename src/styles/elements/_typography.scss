@@ -1,0 +1,31 @@
+// Font declarations
+@font-face {
+    font-family: "TeleNeoRegular";
+    src: url("../../assets/fonts/TeleNeoRegular.woff") format("woff"), url("../../assets/fonts/TeleNeoRegular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "TeleNeoMedium";
+    src: url("../../assets/fonts/TeleNeoMedium.woff") format("woff"), url("../../assets/fonts/TeleNeoMedium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "TeleNeoBold";
+    src: url("../../assets/fonts/TeleNeoBold.woff") format("woff"), url("../../assets/fonts/TeleNeoBold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "TeleNeoExtrabold";
+    src: url("../../assets/fonts/TeleNeoExtrabold.woff") format("woff"), url("../../assets/fonts/TeleNeoExtrabold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "TeleNeoThin";
+    src: url("../../assets/fonts/TeleNeoThin.woff") format("woff"), url("../../assets/fonts/TeleNeoThin.woff2") format("woff2");
+}
+.disabled {
+    color: #98A2B3;
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: not-allowed; 
+}

@@ -1,0 +1,129 @@
+@import "src/styles/settings";
+
+$modal-width: calc($size-1 * 688);
+$checkbox-size: calc($size-1 * 22);
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    padding: $size-40;
+    border-radius: $size-10;
+    background: $color-white;
+    box-shadow: 0 $size-8 $size-20 rgba(65, 65, 65, 0.19);
+    max-width: $modal-width;
+    width: 100%;
+    box-sizing: border-box;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+    }
+
+    &__header {
+        display: flex;
+        width: 100%;
+        font-family: $TeleNeoExtrabold;
+        font-size: $size-24;
+        font-weight: 800;
+        color: #414141;
+        text-align: center;
+        margin-bottom: $size-20;
+    }
+
+    &__body {
+        text-align: justify;
+        color: #414141;
+        font-family: $TeleNeoRegular;
+        font-size: $size-14;
+        font-weight: 400;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+
+        p {
+            margin-top: 0;
+            margin-bottom: $size-20;
+            flex: 1;
+        }
+
+        .modal__input {
+            display: flex;
+            padding: $size-16;
+            border: $size-1 solid #6A6A6A;
+            border-radius: $size-4;
+            margin-bottom: $size-20;
+            box-sizing: border-box;
+            width: 100%;
+            flex: 1;
+        }
+
+        .modal__checkbox {
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: nowrap;
+            flex: 1 1;
+
+            input[type="checkbox"] {
+                max-width: $checkbox-size;
+                max-height: $checkbox-size;
+                margin: 0;
+                padding: 0;
+                margin-right: $size-8; // Right margin for spacing
+                border: $size-2 solid #E20074;
+                cursor: pointer;
+                flex-shrink: 0;
+
+                &:checked {
+                    background-color: #E20074;
+                    color: #fff;
+                }
+            }
+
+            .modal__checkbox__label {
+                flex: 1;
+                color: #414141;
+                font-size: $size-14;
+                line-height: $size-20;
+            }
+        }
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        margin-top: $size-20;
+
+        .btn-primary,
+        .btn-border {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: $size-12 $size-16;
+            font-size: $size-16;
+            cursor: pointer;
+            border-radius: $size-4;
+            flex: 0 1 auto; /* Allow flexible resizing while preserving button shape */
+
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+
+        .btn-primary {
+            background-color: #E20074;
+            color: white;
+            margin-right: $size-16;
+        }
+
+        .btn-border {
+            border: $size-1 solid #414141;
+            background-color: #fff;
+            color: #333;
+        }
+    }
+}

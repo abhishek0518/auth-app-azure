@@ -1,0 +1,26 @@
+{
+    "customerDetails": [
+        {
+            "universalID": "8c8621c31cb1086c3965630d73af3288",
+            "name": "Jane",
+            "surname": "Doe",
+            "fullName": "Jane Doe",
+            "customerType": "Current",
+            "status": "Active",
+            "emailAddress": "janedoe@gmail.com",
+            "ban": "456789123",
+            "msisdnNumber": "5557654321"
+        },
+        {
+            "universalID": "0bc9bd05b6e7e2d68a4f5f51c028e0b2",
+            "name": "Kelly",
+            "surname": "Smith",
+            "fullName": "Kelly Smith",
+            "customerType": "Current",
+            "status": "Active",
+            "emailAddress": "kelly@gmail.com",
+            "ban": "456789123",
+            "msisdnNumber": "+1 527 838 7235"
+        }
+    ]
+}

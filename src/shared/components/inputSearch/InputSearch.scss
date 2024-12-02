@@ -1,0 +1,75 @@
+@import "src/styles/settings";
+@import "src/styles/elements";
+
+$size-343: calc($size-1 * 343);
+
+.input-search {
+  position: relative;
+
+  &__wrap {
+    width: $size-343;
+    position: relative;
+    &__bar {
+      border: 1px solid #e20074;
+      border-radius: $size-6;
+      font-family: $TeleNeoRegular;
+      font-size: $size-16;
+      line-height: $size-20;
+      color: #8c8c8c;
+      background-color: white;
+      padding: 0 $size-50 0 $size-12;
+      width: 100%;
+      box-sizing: border-box;
+      height: $size-40;
+
+      &:focus-visible {
+        outline: none;
+      }
+      &::placeholder {
+        font-family: $TeleNeoRegular;
+        font-size: $size-16;
+        line-height: $size-20;
+        color: #8c8c8c;
+      }
+    }
+
+    &__icon {
+      position: absolute;
+      right: $size-15;
+      top: 50%;
+      transform: translateY(-50%);
+      width: $size-24;
+      height: $size-24;
+      cursor: pointer;
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+    }
+  }
+
+  @include xl-up() {
+    &__wrap {
+      width: 343px;
+      &__bar {
+        border-radius: 6px;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 0 50px 0 12px;
+        height: 40px;
+
+        &::placeholder {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+
+      &__icon {
+        right: 15px;
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}

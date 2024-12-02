@@ -1,0 +1,74 @@
+@import "src/styles/settings";
+@import "src/styles/elements";
+
+.page-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $color-white;
+  border: 1px solid #e7e9eb;
+  border-radius: $size-6;
+  padding: $size-12 $size-20;
+  margin-bottom: $size-20;
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    &__heading-wrap {
+      display: flex;
+      align-items: center;
+      &__icon {
+        width: $size-30;
+        height: $size-30;
+        margin-right: $size-6;
+        cursor: pointer;
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &__heading {
+        font-size: $size-24;
+        line-height: $size-28;
+        color: #a7005a;
+        font-family: $TeleNeoBold;
+      }
+    }
+
+    &__actions {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      &__masked-btn {
+        margin-right: $size-20;
+      }
+    }
+  }
+  @include xl-up() {
+    border-radius: 6px;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    &__wrap {
+      &__heading-wrap {
+        &__icon {
+          width: 40px;
+          height: 40px;
+          margin-right: 6px;
+        }
+        &__heading {
+          font-size: 32px;
+          line-height: 36px;
+        }
+      }
+      &__actions {
+        &__masked-btn {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import "src/styles/settings";
+
+.masked-button {
+  &__wrap {
+    background-color: #a7005a !important;
+    font-family: $TeleNeoBold !important;
+    &__icon {
+      background: url("../../../assets/images/eye-icon-white.svg") center
+        no-repeat;
+      width: $size-16;
+      height: $size-16;
+    }
+    &:hover {
+      background-color: #e20074 !important;
+    }
+  }
+  @include xl-up() {
+    &__wrap {
+      &__icon {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,408 @@
+@import "src/styles/settings";
+@import "src/styles/elements";
+
+$size-76: calc($size-1 * 76);
+$size-78: calc($size-1 * 78);
+$size-240: calc($size-1 * 240);
+$size-400: calc($size-1 * 400);
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+
+  &__top-navbar {
+    height: $size-76;
+    background: $color-white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 $size-48;
+
+    &__logo {
+      display: flex;
+      align-items: center;
+
+      &__icon {
+        img {
+          display: block;
+          width: $size-56;
+          height: $size-56;
+        }
+      }
+      &__color-icon {
+        margin: 0 $size-8 0 $size-20;
+
+        img {
+          display: block;
+          width: $size-34;
+          height: $size-34;
+        }
+      }
+      &__label {
+        font-size: $size-20;
+        line-height: $size-24;
+        color: #414141;
+        text-transform: capitalize;
+        font-family: $TeleNeoExtrabold;
+
+        &__anchor-tag {
+          text-decoration: none;
+          color: inherit;
+        }
+      }
+    }
+
+    &__right-section {
+      &__help-wrapper {
+        display: flex;
+        align-items: center;
+      }
+
+      &__header-icons {
+        width: $size-24;
+        height: $size-24;
+        margin-left: $size-20;
+        vertical-align: bottom;
+        cursor: pointer;
+      }
+      &__profile-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__username {
+          display: flex;
+          align-items: center;
+
+          &__name {
+            font-size: $size-16;
+            line-height: $size-20;
+            color: #e20074;
+            margin: 0 $size-8 0 $size-8;
+            font-family: $TeleNeoRegular;
+          }
+          &__arrow {
+            width: $size-18;
+            height: $size-18;
+          }
+          img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+          }
+        }
+        &__profile-panel {
+          background-color: $color-white;
+          border-radius: $size-4;
+          padding: $size-2 $size-12;
+          position: absolute;
+          top: $size-78;
+          right: $size-48;
+          min-width: $size-240;
+          box-shadow: 0 8px 24px 0
+            var(--elevations-shadows-far, rgba(65, 65, 65, 0.19));
+          z-index: 1;
+          &__link {
+            font-size: $size-16;
+            line-height: $size-20;
+            display: flex;
+            align-items: center;
+            padding: $size-8 0;
+            font-family: $TeleNeoRegular;
+            color: #e20074;
+            cursor: pointer;
+            &:first-child {
+              color: #414141;
+            }
+            &:last-child {
+              margin-bottom: 0;
+            }
+            img {
+              width: $size-20;
+              height: $size-20;
+              margin-right: $size-8;
+            }
+          }
+        }
+        &__notifications {
+          background-color: $color-white;
+          border-radius: 8px;
+          box-shadow: 0px 41px 17px 0px rgba(0, 0, 0, 0.01),
+            0px 23px 14px 0px rgba(0, 0, 0, 0.03),
+            0px 10px 10px 0px rgba(0, 0, 0, 0.05),
+            0px 3px 6px 0px rgba(0, 0, 0, 0.06),
+            0px 0px 0px 0px rgba(0, 0, 0, 0.06);
+          max-width: $size-400;
+          position: absolute;
+          top: $size-78;
+          right: $size-48;
+          overflow: hidden;
+          z-index: 1;
+          &__head {
+            padding: $size-16 $size-24;
+
+            display: flex;
+            align-items: center;
+            &__label {
+              font-size: $size-16;
+              line-height: $size-20;
+              color: #141414;
+              font-family: $TeleNeoMedium;
+            }
+            &__num {
+              width: $size-24;
+              height: $size-24;
+              border-radius: $size-15;
+              background-color: #e20074;
+              margin-left: $size-6;
+              span {
+                font-size: $size-14;
+                line-height: $size-24;
+                color: $color-white;
+                text-align: center;
+                font-family: $TeleNeoRegular;
+                display: block;
+              }
+            }
+          }
+          &__content {
+            display: flex;
+            align-items: center;
+            padding: $size-16 $size-24;
+
+            border-top: 1px solid#dcdee4;
+            background-color: #fafbff;
+            &__t-logo {
+              width: $size-32;
+              height: $size-32;
+              background-color: #ffcee7;
+              margin-right: $size-12;
+              border-radius: 50%;
+
+              img {
+                width: $size-16;
+                height: $size-32;
+                margin: 0 auto;
+                display: block;
+              }
+            }
+            &__wrap {
+              font-size: $size-12;
+              line-height: $size-16;
+              color: #141414;
+              font-family: $TeleNeoMedium;
+
+              span {
+                color: #e20074;
+              }
+              &__period {
+                color: #696f8c;
+                font-family: $TeleNeoRegular;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &__links-wrapper {
+    height: $size-76;
+    background: #e20074;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 $size-48;
+    &__links {
+      @include tag-reset-li();
+      display: flex;
+      align-items: center;
+
+      li {
+        margin-left: $size-48;
+        position: relative;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        a {
+          display: block;
+          font-size: $size-16;
+          line-height: $size-18;
+          color: $color-white;
+          font-family: $TeleNeoBold;
+          text-transform: capitalize;
+          text-decoration: none;
+
+          &:hover,
+          &.active {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    &__btn {
+      .btn-primary {
+        background-color: $color-white;
+        color: #e20074;
+        font-family: $TeleNeoBold;
+
+        &:hover {
+          background-color: #a7005a;
+          color: $color-white;
+          .btn-primary__icon {
+            background-image: url("../../../assets/images/ai-icon-white.svg");
+          }
+        }
+        &__icon {
+          margin-right: 0;
+        }
+      }
+      .disabled {
+        background-color: #f5f5f5;
+        color: #8c8c8c;
+        opacity: unset;
+        .btn-primary__icon {
+          background-image: url("../../../assets/images/ai-icon-grey.svg");
+        }
+      }
+      &__icon {
+        $size: $size-24;
+        background: url("../../../assets/images/ai-icon-pink.svg") center
+          no-repeat;
+        width: $size;
+        height: $size;
+        margin-left: $size-8;
+      }
+    }
+  }
+  @include xl-up() {
+    &__top-navbar {
+      height: 76px;
+      padding: 0 48px;
+
+      &__logo {
+        &__icon {
+          img {
+            width: 56px;
+            height: 56px;
+          }
+        }
+        &__color-icon {
+          margin: 0 8px 0 20px;
+
+          img {
+            width: 34px;
+            height: 34px;
+          }
+        }
+        &__label {
+          font-size: 20px;
+          line-height: 24px;
+          color: #414141;
+        }
+      }
+
+      &__right-section {
+        &__header-icons {
+          width: 24px;
+          height: 24px;
+          margin-left: 20px;
+        }
+        &__profile-wrap {
+          &__username {
+            &__name {
+              font-size: 16px;
+              line-height: 20px;
+              margin: 0 8px 0 8px;
+            }
+            &__arrow {
+              width: 24px;
+              height: 24px;
+            }
+          }
+          &__profile-panel {
+            border-radius: 4px;
+            padding: 2px 12px;
+            top: 78px;
+            right: 48px;
+            min-width: 240px;
+            &__link {
+              font-size: 16px;
+              line-height: 20px;
+              padding: 8px 0;
+              img {
+                width: 20px;
+                height: 20px;
+                margin-right: 8px;
+              }
+            }
+          }
+          &__notifications {
+            border-radius: 8px;
+            max-width: 400px;
+            top: 78px;
+            right: 48px;
+            &__head {
+              padding: 16px 24px;
+              &__label {
+                font-size: 16px;
+                line-height: 20px;
+              }
+              &__num {
+                width: 24px;
+                height: 24px;
+                border-radius: 15px;
+                margin-left: 6px;
+                span {
+                  font-size: 14px;
+                  line-height: 24px;
+                }
+              }
+            }
+            &__content {
+              padding: 16px 24px;
+              &__t-logo {
+                width: 32px;
+                height: 32px;
+                margin-right: 12px;
+                border-radius: 50%;
+
+                img {
+                  width: 16px;
+                  height: 32px;
+                }
+              }
+              &__wrap {
+                font-size: 12px;
+                line-height: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__links-wrapper {
+      height: 76px;
+      padding: 0 48px;
+      &__links {
+        li {
+          margin-left: 48px;
+
+          a {
+            display: block;
+            font-size: 16px;
+            line-height: 18px;
+          }
+        }
+      }
+    }
+    &__btn {
+      &__icon {
+        $size: 24px;
+        margin-left: 8px;
+      }
+    }
+  }
+}
