@@ -20,6 +20,9 @@ const ProfileContent = () => {
   const { instance, accounts } = useMsal();
   const [graphData, setGraphData] = useState(null);
 
+  console.log(process.env);
+  console.log(process.env.AUTH_APP_CLIENT_ID);
+
   function RequestProfileData() {
     instance
       .acquireTokenSilent({
